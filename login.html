@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferreteria Cerpint. C. A - Iniciar Sesión</title>
+  <link rel="icon" href="/img/logoCerpint.png" type="image/png">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logoCerpint.png" alt="logo de Cerpint C. A" id="logo" width="100" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="carrito.html"> <i class="fa-solid fa-cart-shopping fa-xl text-white"></i> </a>
+            </li>
+            <li class="nav-item"><a href="index.html" class="nav-link fw-bolder">Inicio</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link fw-bolder">Contacto</a></li>
+
+           
+            <li class="nav-item d-flex align-items-center" id="sessionStatus"> </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main d-flex justify-content-center align-items-center" style="min-height: calc(100vh - 100px);">
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="login-card p-4 shadow-lg">
+            <div class="card-body">
+              <h2 class="card-title text-center mb-4">Iniciar Sesión</h2>
+              <form id="loginForm" action="#" method="POST">
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="loginEmail" name="email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">Contraseña</label>
+                  <input type="password" class="form-control" id="loginPassword" name="password" required>
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="loginRememberMe">
+                  <label class="form-check-label" for="loginRememberMe">Recordarme</label>
+                </div>
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-primary btn-lg">Acceder</button>
+                </div>
+              </form>
+              <hr class="my-4">
+              <p class="text-center">¿No tienes una cuenta?</p>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal"
+                  data-bs-target="#registerModal">Regístrate Aquí</button>
+              </div>
+              <p class="text-center mt-3">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">¿Olvidaste tu contraseña?</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Todos los derechos reservados ∴ Ferretería Cerpint C. A ∴ 2025</p>
+  </footer>
+
+  <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Crear Cuenta</h5>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="registerName" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="registerName" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerEmail" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="registerEmail" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerPassword" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="registerPassword" name="password" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerConfirmPassword" class="form-label">Confirmar Contraseña</label>
+              <input type="password" class="form-control" id="registerConfirmPassword" name="confirm_password" required>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="registerTerms" required>
+              <label class="form-check-label" for="registerTerms">Acepto los <a href="/Document/Términos y Condiciones de Uso de CERPINT C.pdf" target="_blank">términos y
+                  condiciones</a></label>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg">Registrarme</button>
+            </div>
+          </form>
+          <hr class="my-4">
+          <p class="text-center">¿Ya tienes una cuenta?</p>
+          <div class="d-grid gap-2">
+            <button type="button" class="btn btn-outline-success btn-lg" data-bs-dismiss="modal">Iniciar Sesión</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="forgotPasswordModalLabel">Recuperar Contraseña</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="forgotPasswordForm">
+            <div class="mb-3">
+              <label for="forgotPasswordEmail" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="forgotPasswordEmail" name="email" required>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg">Enviar Enlace de Recuperación</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="resetPasswordModal" tabindex="-1" aria-labelledby="resetPasswordModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resetPasswordModalLabel">Restablecer Contraseña</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="resetPasswordForm">
+            <input type="hidden" id="resetUserEmail" name="email">
+  
+            <div class="mb-3">
+              <label for="newPassword" class="form-label">Nueva Contraseña</label>
+              <input type="password" class="form-control" id="newPassword" name="new_password" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmNewPassword" class="form-label">Confirmar Nueva Contraseña</label>
+              <input type="password" class="form-control" id="confirmNewPassword" name="confirm_new_password" required>
+            </div>
+            <div class="d-grid gap-2">
+              <button type="submit" class="btn btn-primary btn-lg">Cambiar Contraseña</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="/js/login.js"></script>
+  <script src=" js/sessionDisplay.js"></script>
+</body>
+
+</html>

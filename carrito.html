@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferreteria Cerpint. C. A</title>
+  <link rel="icon" href="/img/logoCerpint.png" type="image/png">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+
+
+
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/img/logoCerpint.png" alt="logo de Cerpint C. A" id="logo" width="100" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link fw-bolder">Inicio</a></li>
+            <li class="nav-item"><a href="contacto.html" class="nav-link fw-bolder">Contacto</a></li>
+            
+            <li class="nav-item d-flex align-items-center" id="sessionStatus"> </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="main">
+    <h1 class="title text-center my-4"><span>CERPINT</span> TU MEJOR ALIADO</h1>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/12 Most Common Mistakes When Pouring Concrete.webp" class="card-img-top"
+              alt="cemento">
+            <div class="card-body">
+              <h5 class="card-title">Cemento</h5>
+              <p class="card-text">Precio: 8$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-cemento"
+                    aria-label="Cantidad de Cemento">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Cemento', 8, document.getElementById('cantidad-cemento').value)">Agregar al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="img2/webp/compressed/1_ Fpt Union Ball Valve Tapped Test Port Lead Free Backflow Pvb 1 In Febco Watts.webp"
+              class="card-img-top" alt="llave de paso">
+            <div class="card-body">
+              <h5 class="card-title">Llave de paso</h5>
+              <p class="card-text">Precio: 4.5$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-llave-de-paso"
+                    aria-label="Cantidad de llave de paso">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Llave de paso', 4.5, document.getElementById('cantidad-llave-de-paso').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 ">
+          <div class="card">
+            <img
+              src="img2/webp/compressed/Bombilla Led E27 Estándar A60 8w Regulable 800lm Blanco Frío 6500k - Bombillas Led E27.webp"
+              class="card-img-top" alt="Bombillo">
+            <div class="card-body">
+              <h5 class="card-title">Bombillo led</h5>
+              <p class="card-text">Precio: 2$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-bombillo"
+                    aria-label="Cantidad de bombillo">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Bombillo', 2, document.getElementById('cantidad-bombillo').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/Codo 45° Galvanizado 1 Foset.webp" class="card-img-top"
+              alt="Codo galvanizado">
+            <div class="card-body">
+              <h5 class="card-title">Codo Galvanizado</h5>
+              <p class="card-text">Precio: 0.75$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-codo-galvanizado"
+                    aria-label="Cantidad de codo galvanizado">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Codo galvanizado', 0.75, document.getElementById('cantidad-codo-galvanizado').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/descarga.webp" class="card-img-top" alt="Lavaplatos doble tina">
+            <div class="card-body">
+              <h5 class="card-title">Lavaplatos doble tina</h5>
+              <p class="card-text">Precio: 38$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-lavaplato-doble-tina"
+                    aria-label="Cantidad de lavaplatos">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Lavaplato', 38, document.getElementById('cantidad-lavaplato-doble-tina').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/Disco Abrasivo De Corte 4 1_2 X 1mm X 7_8 - Dw8062-Ar Dewalt.webp"
+              class="card-img-top" alt="Disco de corte de Metal">
+            <div class="card-body">
+              <h5 class="card-title">Disco de corte de Metal</h5>
+              <p class="card-text">Precio: 1$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-disco-de-corte-de-metal"
+                    aria-label="Cantidad de Disco de corte de metal">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Disco de corte de metal', 1, document.getElementById('cantidad-disco-de-corte-de-metal').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/Escuadra Acero Carpintero 60 Cm X 40 Cm - Electroimporta - - 310.webp"
+              class="card-img-top" alt="Escuadra de Carpintero">
+            <div class="card-body">
+              <h5 class="card-title">Escuadra de Carpintero</h5>
+              <p class="card-text">Precio: 1$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-escuadra-de-carpintero"
+                    aria-label="Cantidad de Escuadras de carpinteria">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Escuadra de carpinteria', 1, document.getElementById('cantidad-escuadra-de-carpintero').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="img2/webp/compressed/Hibbent Bathroom Waste Pipe,Flexible Waste Pipe 1 1_4_ Bathroom Sink Plumbing Parts, Odour-Proof Sink Waste Trap, Replaceable Drain Down Hose，Grey,Extensable 320-780 mm.webp.webp"
+              class="card-img-top" alt="Sifón de Fregadero">
+            <div class="card-body">
+              <h5 class="card-title">Sifón de Fregadero</h5>
+              <p class="card-text">Precio: 2.5$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-sifón-de-fregadero"
+                    aria-label="Cantidad de Sifon de fregadero">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Sifon de fregadero', 2.5, document.getElementById('cantidad-sifón-de-fregadero').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/Tipos de Tuberías en Contrucción.webp" class="card-img-top"
+              alt="Tuberia PVC">
+            <div class="card-body">
+              <h5 class="card-title">Tuberia PVC</h5>
+              <p class="card-text">Precio: 15$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-tuberia-PVC"
+                    aria-label="Tuberia PVC">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Tuberia PVC', 15, document.getElementById('cantidad-tuberia-PVC').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/nails-955731_640.webp" class="card-img-top" alt="clavos">
+            <div class="card-body">
+              <h5 class="card-title">Clavos</h5>
+              <p class="card-text">Precio: 5$ Kg</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-clavo"
+                    aria-label="Cantidad de clavo">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Clavo', 5, document.getElementById('cantidad-clavo').value)">Agregar al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/screwdriver-5221750_640.webp" class="card-img-top" alt="Taladro">
+            <div class="card-body">
+              <h5 class="card-title">Taladro</h5>
+              <p class="card-text">Precio: 30$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-taladro"
+                    aria-label="Cantidad de Taladro">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Taladro', 30, document.getElementById('cantidad-taladro').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/tool-5092932_640.webp" class="card-img-top" alt="Remachadora">
+            <div class="card-body">
+              <h5 class="card-title">Remachadora</h5>
+              <p class="card-text">Precio: 10$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-remachadora"
+                    aria-label="Cantidad de remachadora">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Remachadora', 10, document.getElementById('cantidad-remachadora').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/toolbox-2645700_640.webp" class="card-img-top" alt="Juego de Dados">
+            <div class="card-body">
+              <h5 class="card-title">Juego de Dados</h5>
+              <p class="card-text">Precio: 53$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-juego-de-dados"
+                    aria-label="Cantidad de juego de dado">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Juego de dados', 53, document.getElementById('cantidad-juego-de-dados').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img2/webp/compressed/wrench-988748_640.webp" class="card-img-top" alt="Juego de llaves">
+            <div class="card-body">
+              <h5 class="card-title">Juego de llaves</h5>
+              <p class="card-text">Precio: 9.99$</p>
+              <div class="input-group justify-content-center mb-3" style="width: auto;">
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepDown()">-</button>
+                <div class="col-4">
+                  <input type="number" class="form-control value=" 1" min="1" id="cantidad-juego-de-llaves"
+                    aria-label="Cantidad de juego de llaves">
+                </div>
+                <button class="btn btn-outline-secondary" type="button"
+                  onclick="this.parentNode.parentNode.querySelector('input[type=number]').stepUp()">+</button>
+              </div>
+              <div class="justify-content-center d-flex">
+                <button class="btn btn-primary"
+                  onclick="agregarAlCarrito('Juego de Llaves', 9.99, document.getElementById('cantidad-juego-de-llaves').value)">Agregar
+                  al
+                  Carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 text-center border-dashed p-4 d-flex flex-column justify-content-center align-items-center">
+            <h5 class="card-title text-muted mb-3">Catálogo en Construcción</h5>
+            <p class="card-text text-muted">Estamos trabajando arduamente para completar nuestro catálogo en línea.</p>
+            <i class="fas fa-hard-hat fa-3x text-muted mt-3"></i>
+            <p class="card-text text-muted mt-2">¡Gracias por tu paciencia!</p>
+          </div></div>
+
+      </div>
+    </div>
+    <div class="justify-content-center d-flex">
+      <button class="btn btn-success" onclick="mostrarTotal()" data-bs-toggle="modal"
+        data-bs-target="#paymentModal">Proceder
+        al Pago</button>
+    </div>
+
+  </main>
+
+
+  <footer class="footer">
+    <p>Todos los derechos reservados ∴ Ferretería Cerpint C. A ∴ 2025</p>
+  </footer>
+
+  <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="paymentModalLabel">Total de Compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div id="listaArticulos"></div>
+          <p>El total de su compra es: <strong id="totalCompra">$0</strong></p>
+  
+          <form id="contact-form">
+            <div class="mb-3">
+              <label for="user_name" class="form-label">Tu Nombre</label>
+              <input type="text" class="form-control" id="user_name" name="user_name" required>
+            </div>
+            <div class="mb-3">
+              <label for="user_email" class="form-label">Tu Correo Electrónico</label>
+              <input type="email" class="form-control" id="user_email" name="user_email" required>
+            </div>
+            <input type="hidden" name="message_html" id="message_html">
+            <input type="hidden" name="total_price_hidden" id="total_price_hidden">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          
+          <button type="button" class="btn btn-info" onclick="enviarPresupuesto()">Enviar Presupuesto por Correo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("rvZ0wnPhc1YiVn0FU"); // Reemplaza con tu Public Key de EmailJS
+    })();
+  </script>
+  <script src="js/carrito.js"></script>
+  <script src=" js/sessionDisplay.js"></script>
+</body>
+
+</html>
